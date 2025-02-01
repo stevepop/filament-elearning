@@ -20,8 +20,11 @@ A comprehensive e-learning platform built with Laravel 11 and Filament 3, demons
 - Instructor performance metrics
 
 ## Screenshots
+![admin_login](https://github.com/user-attachments/assets/043062da-dc8e-4c7d-bc8f-cb8eec72fff8)
+![students](https://github.com/user-attachments/assets/67688c9d-9d29-4606-82d3-3af923e3a321)
 
-[Include screenshots of key features]
+![filament_dashboard2](https://github.com/user-attachments/assets/0ed153bd-3b7e-49de-9c60-35515142acf8)
+
 
 ## Prerequisites
 
