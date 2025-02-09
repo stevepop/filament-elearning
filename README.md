@@ -41,29 +41,36 @@ cd filament-elearning
 ```bash 
 composer install
 ```
-3. Install and build frontend assets
+3. Copy the `.env.example` file to `.env`and generate a new application key
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Install and build frontend assets
 ```bash
 npm install
 npm run dev
 ```
-4.  Create a new SQLite database
+5. Create a new SQLite database
 ```bash
 touch database/database.sqlite
 ```
-5. Run database migrations
+7. Run database migrations
 ```bash
 php artisan migrate
 ```
-6. Seed the database with sample data
+8. Seed the database with sample data
 ```bash
 php artisan db:seed
 ```
-7. Start the Laravel development server
+8. Start the Laravel development server
 ```bash
 php artisan serve
 ```
-8. Visit `http://localhost:8000/admin` in your browser
-9. Log in with the default credentials:
+9. Visit `http://localhost:8000/admin` in your browser
+10. Log in with the default credentials:
    - Email: `admin@example.com`
    - Password: `password`
 
