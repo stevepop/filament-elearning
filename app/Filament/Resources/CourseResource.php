@@ -60,7 +60,7 @@ class CourseResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('instructor.name')
+                Tables\Columns\TextColumn::make('instructor.user.name')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('level')
                     ->badge()
