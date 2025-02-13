@@ -21,7 +21,7 @@
                 <div class="flex">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="{{ route('home') }}" class="text-xl font-bold text-gray-800">
+                        <a href="/" class="text-xl font-bold text-gray-800">
                             {{ config('app.name', 'Laravel') }}
                         </a>
                     </div>
@@ -30,7 +30,7 @@
                 <!-- Navigation Links -->
                 <div class="flex items-center">
                     @auth
-                        <a href="{{ route('dashboard') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2">Dashboard</a>
+                        <a href="{{ route('filament.admin.pages.dashboard') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2">Admin Dashboard</a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="text-gray-700 hover:text-gray-900 px-3 py-2">Logout</button>

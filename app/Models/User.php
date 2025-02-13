@@ -55,4 +55,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(Student::class);
     }
+
+    public function hasRole($role): bool
+    {
+        return $this->role === $role;
+    }
+
+    public function enrolledCourses()
+    {
+        return $this->belongsToMany(Course::class, 'enrollments', 'student_id', 'course_id');
+    }
 }
